@@ -1,53 +1,78 @@
-
-
-#title{
-  font-family: "Arial Black", Gadget, sans-serif;
-font-size: 22px;
-letter-spacing: 2px;
-word-spacing: 2px;
-color: #FFFE52;
-font-weight: normal;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
+html, body {
+  height: 100%;
+  width: 100%;
+  margin:0
 }
 
-.map-overlay {
-font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-position: absolute;
-width: 25%;
-height:100%;
-top: 0;
-left: 0;
-padding: 10px;
+#mapContainer {
+  height: 100%;
+  width: 100%;
+  background: lightgray;
+  margin: 0 auto;
 }
 
-.map-overlay .map-overlay-inner {
-background-color: #fff;
-box-shadow:0 1px 2px rgba(0, 0, 0, 0.20);
-border-radius: 3px;
-padding: 10px;
-margin-bottom: 10px;
+#sidebar {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 15px;
 }
 
-.map-overlay h2 {
-line-height: 24px;
-display: block;
-margin: 0 0 10px;
+.info-box_title {
+  top: 25px;
+  left: 25px;
+  z-index: 10;
+  background-color: white;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 7px #525252;
+  margin-bottom:15px
 }
 
-.map-overlay .legend .bar {
-height: 10px;
-width: 100%;
-background: linear-gradient(to right, #FCA107, #7F3121);
+.info-box_fly {
+  top: 25px;
+  left: 25px;
+  z-index: 10;
+  background-color: white;
+  padding: 15px;
+  border-radius: 7px;
+  margin-bottom:15px
 }
 
-.map-overlay input {
-background-color: transparent;
-display: inline-block;
-width: 100%;
-position: relative;
-margin: 0;
-cursor: ew-resize;
+.info-box_photo {
+  top: 25px;
+  left: 25px;
+  z-index: 10;
+  background-color: white;
+  padding: 10px;
+}
+
+h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.4rem;
+}
+
+h4 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+}
+
+button {
+  padding: 3px 8px;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: white;
+color: black;
+border: 1.5px solid steelblue; /* Green */
+cursor:pointer;
+}
+
+.legend-color-box {
+  height: 15px;
+  width: 15px;
+  float: right;
+  margin-right: 10px;
 }
