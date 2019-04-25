@@ -103,8 +103,6 @@ var neighborHoodLookup = {
   'Redhook-Park': [-74.005388,40.671864],
   'IKEA': [-74.011208,40.671984],
   'Fairway-Market': [-74.017028,40.674873],
-  'CTown-Supermarket':[-74.004384,40.676474],
-
 
 }
 
