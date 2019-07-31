@@ -13,7 +13,7 @@ body {
 }
 
 #sidebar {
-    width: 400px;
+    width: 300px;
     position: absolute;
     top: 0;
     left: 0;
@@ -23,7 +23,7 @@ body {
 }
 
 #graph {
-    width: 400;
+    width: 1000px;
     position: absolute;
     top: 80;
     left: 0;
@@ -55,8 +55,8 @@ body {
 }
 
 .info-box-graph {
-    width: 380px;
-    height: 260px;
+    width: 700px;
+    height: 160px;
     z-index: 10;
     background-color: white;
     padding: 10px;

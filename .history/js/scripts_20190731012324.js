@@ -45,7 +45,7 @@ map.on('load', function() {
                 property: 'num_nonrequested',
                 stops: [
                     [6, '#29928e'],
-                    [12, '#33cc33'],
+                    [12, '#7dcc57'],
                     [18, '#f0e340']
                 ]
             },

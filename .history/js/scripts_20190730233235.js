@@ -5,7 +5,7 @@ var map = new mapboxgl.Map({
     container: 'mapContainer',
     style: 'mapbox://styles/mapbox/dark-v10',
     center: [-74.0059, 40.7577],
-    zoom: 12,
+    zoom: 11.5,
 });
 
 // Add zoom and rotation controls to the map.
@@ -18,7 +18,7 @@ var hours = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12",
 function filterBy(hour) {
     var filters = ['==', 'Hour', hour];
     map.setFilter('nonrequestpoints', filters);
-    document.getElementById('hour').textContent = hours[hour] + ":00";
+    document.getElementById('hour').textContent = hours[hour];
 }
 
 
@@ -27,7 +27,7 @@ map.on('load', function() {
     //add source
     map.addSource('pointssource', {
         type: 'geojson',
-        data: 'https://dl.dropbox.com/s/prjdzwlsbnbryaz/newform2.geojson?dl=0',
+        data: 'https://dl.dropboxusercontent.com/s/zw07yqsy554hq43/newform.geojson?dl=0',
     });
 
     //add station's address as a label
@@ -39,32 +39,16 @@ map.on('load', function() {
         source: 'pointssource',
         paint: {
             // make circles larger as the user zooms  num_nonrequested
-            'circle-opacity': 0.85,
-            'circle-stroke-color': 'white',
-            "circle-color": {
-                property: 'num_nonrequested',
-                stops: [
-                    [6, '#29928e'],
-                    [12, '#33cc33'],
-                    [18, '#f0e340']
-                ]
-            },
-            // [
-            //     'interpolate', ['linear'],
-            //     ['get', 'num_nonrequested'],
-            //     6, '#f1f075',
-            //     12, '#e55e5e'
-            // ],
-
-
-            "circle-radius": {
-                property: 'num_nonrequested',
-                stops: [
-                    [6, 3],
-                    [12, 6],
-                    [18, 9]
-                ]
-            }
+            'circle-opacity': 0.5,
+            "circle-color": [
+                "step", ["number", "num_nonrequested"],
+                "#429EFF", 2,
+                "#80FF9E”, 5,
+                "#F0FF3D”, 10,
+                "#FF94A6”, 20,
+                "#C399FF”
+            ],
+            "circle-radius": 6
         }
 
 

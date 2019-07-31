@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>DataVisualizationFinal</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    <div id="mapContainer">
+        <div id="sidebar">
+            <div class="info-box_title">
+                <h3>Vehicle utilization and overload</h3>
+                <span>Select different number of passengers to see the spatio-temporal distribution.</span><br/>
+
+            </div>
+            <div class="info-box_fly">
+                <h4>Number of passengers</h4>
+                <!-- These buttons use data attributes, which we can easily pull using jquery -->
+                <input type="checkbox">empty
+                <input type="checkbox">1-3
+                <input type="checkbox">>=4
+
+                <h4>Hours</h4>
+
+
+
+
+            </div>
+            <div class="info-box graph">
+                <h4>Number of vehicles</h4>
+                <p>Number of vehicles with empty/1-3/over4 passengers over 24 hours</p>
+                <!-- We'll programmatically make the legend here -->
+            </div>
+        </div>
+    </div>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

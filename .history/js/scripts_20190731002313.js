@@ -39,30 +39,26 @@ map.on('load', function() {
         source: 'pointssource',
         paint: {
             // make circles larger as the user zooms  num_nonrequested
-            'circle-opacity': 0.85,
-            'circle-stroke-color': 'white',
-            "circle-color": {
-                property: 'num_nonrequested',
-                stops: [
-                    [6, '#29928e'],
-                    [12, '#33cc33'],
-                    [18, '#f0e340']
+            'circle-opacity': 0.7,
+            "circle-color": [
+                    'interpolate', ['linear'],
+                    ['get', 'num_nonrequested'],
+                    6, '#f1f075',
+                    12, '#e55e5e'
                 ]
-            },
-            // [
-            //     'interpolate', ['linear'],
-            //     ['get', 'num_nonrequested'],
-            //     6, '#f1f075',
-            //     12, '#e55e5e'
-            // ],
+                // property: 'num_nonrequested',
+                // stops: [
+                //     [6, '#f1f075'],
+                //     [12, '#e55e5e']
+                // ]
+                //},
 
-
-            "circle-radius": {
+                "circle-radius": {
                 property: 'num_nonrequested',
                 stops: [
-                    [6, 3],
-                    [12, 6],
-                    [18, 9]
+                    [5, 3],
+                    [10, 6],
+                    [15, 9]
                 ]
             }
         }

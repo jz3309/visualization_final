@@ -39,14 +39,14 @@ map.on('load', function() {
         source: 'pointssource',
         paint: {
             // make circles larger as the user zooms  num_nonrequested
-            'circle-opacity': 0.85,
+            'circle-opacity': 0.7,
             'circle-stroke-color': 'white',
             "circle-color": {
                 property: 'num_nonrequested',
                 stops: [
-                    [6, '#29928e'],
-                    [12, '#33cc33'],
-                    [18, '#f0e340']
+                    [6, '#66c2a5'],
+                    [12, '#fee08b'],
+                    [18, '#f46d43']
                 ]
             },
             // [
