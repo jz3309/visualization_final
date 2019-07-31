@@ -1,4 +1,4 @@
-html,
+    html,
 body {
     height: 100%;
     width: 100%;
@@ -66,58 +66,47 @@ body {
     box-shadow: 1px 1px 7px #979696;
 }
 
-#legend {
-    left: 40px
-}
-
 .info-box-graph {
-    width: 410px;
+    width: 400px;
     height: 260px;
     z-index: 10;
     background-color: white;
     padding: 10px;
     border-radius: 7px;
     margin-bottom: 15px;
-    box-shadow: 1px 1px 7px #979696
-}
-
-h3 {
-    margin: 0 0 15px 0;
-    font-size: 1.4rem;
-}
-
-h4 {
-    margin: 0 0 10px 0;
-    font-size: 1rem;
-}
-
-input[type="range"] {
-    display: block;
-    -webkit-appearance: none;
-    background-color: #b6b5b2;
-    width: 370px;
-    height: 5px;
-    border-radius: 5px;
-    margin: 0 auto;
-    outline: 0;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: #29928e;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    border: 2px solid white;
-    cursor: pointer;
-    transition: .2s ease-in-out;
-}
-
-​ input[type="range"]::-webkit-slider-thumb:hover {
-    background-color: white;
-    border: 2px solid #29928e;
-}
-
-input[type="range"]::-webkit-slider-thumb:active {
-    transform: scale(1.2);
-}
+    box-shadow: 1px 1px 7px #979696;
+    h3 {
+        margin: 0 0 15px 0;
+        font-size: 1.4rem;
+    }
+    h4 {
+        margin: 0 0 10px 0;
+        font-size: 1rem;
+    }
+    input[type="range"] {
+        display: block;
+        -webkit-appearance: none;
+        background-color: #91908c;
+        width: 280px;
+        height: 5px;
+        border-radius: 5px;
+        margin: 0 auto;
+        outline: 0;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background-color: #29928e;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+    ​ input[type="range"]::-webkit-slider-thumb:hover {
+        background-color: white;
+        border: 2px solid #29928e;
+    }
+    input[type="range"]::-webkit-slider-thumb:active {
+        transform: scale(1.2);
+    }

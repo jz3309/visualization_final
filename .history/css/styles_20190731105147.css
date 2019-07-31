@@ -66,10 +66,6 @@ body {
     box-shadow: 1px 1px 7px #979696;
 }
 
-#legend {
-    left: 40px
-}
-
 .info-box-graph {
     width: 410px;
     height: 260px;
@@ -94,8 +90,8 @@ h4 {
 input[type="range"] {
     display: block;
     -webkit-appearance: none;
-    background-color: #b6b5b2;
-    width: 370px;
+    background-color: #91908c;
+    width: 280px;
     height: 5px;
     border-radius: 5px;
     margin: 0 auto;

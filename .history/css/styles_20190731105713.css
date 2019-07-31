@@ -94,8 +94,8 @@ h4 {
 input[type="range"] {
     display: block;
     -webkit-appearance: none;
-    background-color: #b6b5b2;
-    width: 370px;
+    background-color: #91908c;
+    width: 360px;
     height: 5px;
     border-radius: 5px;
     margin: 0 auto;

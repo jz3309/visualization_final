@@ -40,7 +40,7 @@ body {
     padding: 15px;
     border-radius: 7px;
     width: 400px;
-    box-shadow: 1px 1px 7px #979696;
+    box-shadow: 1px 1px 7px #fdfdfd;
     margin-bottom: 15px
 }
 
@@ -50,7 +50,7 @@ body {
     background-color: white;
     padding: 15px;
     border-radius: 7px;
-    box-shadow: 1px 1px 7px #979696;
+    box-shadow: 1px 1px 7px #fdfdfd;
     margin-bottom: 15px
 }
 
@@ -63,22 +63,18 @@ body {
     padding: 15px;
     border-radius: 7px;
     margin-bottom: 15px;
-    box-shadow: 1px 1px 7px #979696;
-}
-
-#legend {
-    left: 40px
+    box-shadow: 1px 1px 7px #fcfbfb;
 }
 
 .info-box-graph {
-    width: 410px;
+    width: 400px;
     height: 260px;
     z-index: 10;
     background-color: white;
     padding: 10px;
     border-radius: 7px;
     margin-bottom: 15px;
-    box-shadow: 1px 1px 7px #979696
+    box-shadow: 1px 1px 7px #fdfdfd;
 }
 
 h3 {
@@ -94,8 +90,8 @@ h4 {
 input[type="range"] {
     display: block;
     -webkit-appearance: none;
-    background-color: #b6b5b2;
-    width: 370px;
+    background-color: #91908c;
+    width: 280px;
     height: 5px;
     border-radius: 5px;
     margin: 0 auto;

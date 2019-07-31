@@ -17,7 +17,7 @@
     <div id="mapContainer">
         <div id="sidebar">
             <div class="info-box_title">
-                <h3>Map of trips could not be served</h3>
+                <h3>Map of requests that could not served</h3>
                 <span>Question2:For those trips that could not be served, do they follow a spatial or temporal pattern?</br>
                     From the map, you can see that most of the trips not being served concentrated in Garmen district, Chelsea district and upper east side area from 9 am to 11 am.Between 1 am and 3 am, the trips concentrated in the midtown area. 
                     From 7 pm to 12 am (midnight), you can see the requests originated in the Midtown Manhattan and later in Lower Manhattan(mostly in east village) from 10pm.
@@ -25,9 +25,7 @@
 
             </div>
             <div class="info-box-panel">
-                <h4>Drag the slider to check the distribution of not served trips per hour.
-
-                </h4>
+                <h4>Use the slider to check the distribution of trips not being served per hour.</h4>
 
                 <!-- 
                 <select>
@@ -37,31 +35,26 @@
 
                 </select>-->
 
-                <h4 align="center">Time:<label id='hour'></label></h4>
-                <input id='slider' type="range" id="slider" min="0" max="23" step="1" value="0" />
-                </br>
-                <span><img id="legend" src="https://i.postimg.cc/CKG5JP8v/11111120190731092757.png" width="50px" height="50px"/></span>
-                <span>Max:154 trips Avg:around 6 trips</span>
+                <h4>Time:<label id='hour'></label></h4>
+                <input id='slider' type="range" id="slider" min="0" max="23" step="1" value="1" />
+
+                <img src="https://i.postimg.cc/CKG5JP8v/11111120190731092757.png" width="40px" height="40px" />
 
             </div>
             <div class="info-box-graph">
-                <h4 align="center">Number of requests could not be served by hour</h4>
+                <h4>Number of requests could not be served by hour</h4>
                 <img src="https://i.postimg.cc/mDzCKr2S/20190730210724.png" width="384px" height="240px" />
 
+
                 <!--  programmatically make the legend here<img src="https://i.postimg.cc/W44nn9sZ/legend-20190731013826.png" width="90px" height="120px" /> -->
-
-            </div>
-
-            <div class="info-box_legend">
-
 
             </div>
 
 
         </div>
 
-    </div>
 
+    </div>
 
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
